@@ -57,6 +57,7 @@
             border-radius: 16px;
             max-width: 480px;
             width: 100%;
+            margin: 0 auto;
             padding: 40px;
             position: relative;
             z-index: 1;
@@ -322,18 +323,19 @@
 
         @media (max-width: 480px) {
             body {
-                padding: 12px;
-                align-items: flex-start;
-                padding-top: 20px;
+                padding: 16px;
+                align-items: center;
             }
 
             .container {
-                padding: 24px 20px;
+                padding: 28px 20px;
                 max-width: 100%;
+                width: 100%;
+                margin: 0;
             }
 
             h1 {
-                font-size: 22px;
+                font-size: 24px;
             }
 
             .subtitle {
@@ -345,7 +347,7 @@
             }
 
             .mode-btn {
-                padding: 10px 8px;
+                padding: 12px 8px;
                 font-size: 13px;
             }
 
@@ -365,63 +367,69 @@
 
             input,
             textarea {
+                width: 100%;
                 padding: 12px 14px;
-                font-size: 14px;
+                font-size: 15px;
             }
 
             textarea {
-                min-height: 100px;
+                min-height: 110px;
                 font-size: 13px;
             }
 
             .paste-btn {
                 width: 100%;
-                padding: 11px;
+                padding: 12px;
             }
 
             .action-btn {
-                padding: 14px;
-                font-size: 14px;
+                padding: 15px;
+                font-size: 15px;
             }
 
             .result-section {
-                padding: 16px;
+                padding: 18px;
                 margin-top: 20px;
             }
 
             .result-text {
-                padding: 12px;
-                font-size: 11px;
+                padding: 14px;
+                font-size: 12px;
             }
 
             .footer {
-                margin-top: 20px;
-                font-size: 10px;
+                margin-top: 24px;
+                font-size: 11px;
             }
 
             body::before,
             body::after {
-                opacity: 0.5;
+                display: none;
             }
         }
 
         @media (max-width: 360px) {
+            body {
+                padding: 12px;
+            }
+
             .container {
-                padding: 20px 16px;
+                padding: 24px 16px;
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 22px;
             }
 
             .mode-btn {
                 font-size: 12px;
-                padding: 9px 6px;
+                padding: 10px 6px;
             }
 
             input,
             textarea {
-                font-size: 13px;
+                font-size: 14px;
+                padding: 11px 12px;
             }
         }
     </style>
