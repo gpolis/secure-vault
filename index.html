@@ -22,9 +22,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 16px;
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         body::before {
@@ -321,25 +321,107 @@
         }
 
         @media (max-width: 480px) {
+            body {
+                padding: 12px;
+                align-items: flex-start;
+                padding-top: 20px;
+            }
+
             .container {
-                padding: 28px 24px;
+                padding: 24px 20px;
+                max-width: 100%;
             }
 
             h1 {
-                font-size: 24px;
+                font-size: 22px;
+            }
+
+            .subtitle {
+                font-size: 12px;
+            }
+
+            .mode-switch {
+                margin-bottom: 24px;
             }
 
             .mode-btn {
-                padding: 10px;
+                padding: 10px 8px;
                 font-size: 13px;
+            }
+
+            .input-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-size: 12px;
+                margin-bottom: 8px;
             }
 
             .input-wrapper {
                 flex-direction: column;
+                gap: 8px;
+            }
+
+            input,
+            textarea {
+                padding: 12px 14px;
+                font-size: 14px;
+            }
+
+            textarea {
+                min-height: 100px;
+                font-size: 13px;
             }
 
             .paste-btn {
                 width: 100%;
+                padding: 11px;
+            }
+
+            .action-btn {
+                padding: 14px;
+                font-size: 14px;
+            }
+
+            .result-section {
+                padding: 16px;
+                margin-top: 20px;
+            }
+
+            .result-text {
+                padding: 12px;
+                font-size: 11px;
+            }
+
+            .footer {
+                margin-top: 20px;
+                font-size: 10px;
+            }
+
+            body::before,
+            body::after {
+                opacity: 0.5;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .mode-btn {
+                font-size: 12px;
+                padding: 9px 6px;
+            }
+
+            input,
+            textarea {
+                font-size: 13px;
             }
         }
     </style>
